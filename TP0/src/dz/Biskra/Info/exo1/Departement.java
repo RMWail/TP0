@@ -25,7 +25,9 @@ public class Departement {
 	}
 	
 	public void unregister(Student removedStudent) {
-		Iterator<Student> iterator = students.iterator();
+		
+	 /*
+	  	Iterator<Student> iterator = students.iterator();
 		while(iterator.hasNext()) {
 			
 			Student stu = iterator.next();
@@ -35,7 +37,9 @@ public class Departement {
 				iterator.remove();
 			}
 		}
+	   */
 		
+		this.students.remove(removedStudent);
 	}
 	
 	
